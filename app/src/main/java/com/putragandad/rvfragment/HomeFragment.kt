@@ -48,10 +48,8 @@ class HomeFragment : Fragment() {
         movieList.add(MovieList(R.drawable.movie_3, "The Last of Us", "2023", "Pedro Pascal, Bella Ramsey, Anna Torv, etc"))
         movieList.add(MovieList(R.drawable.movie_4, "Avatar: The Way of Water", "2022", "Sam Worthington, Zoe Saldana, Sigourney Weaver, etc"))
 
+        val movieListHomeAdapter = MovieListHomeAdapter(movieList)
 
-
-        val movieListAdapter = MovieListAdapter(movieList)
-
-        recyclerView.adapter = movieListAdapter
+        recyclerView.adapter = movieListHomeAdapter
     }
 }

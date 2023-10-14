@@ -7,8 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class MovieListAdapter (private val MovieList: ArrayList<MovieList>) :
-    RecyclerView.Adapter<MovieListAdapter.movieViewHolder>(){
+class MovieListHomeAdapter (private val MovieList: ArrayList<MovieList>) :
+    RecyclerView.Adapter<MovieListHomeAdapter.movieViewHolder>(){
 
     class movieViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val ivMovie : ImageView = itemView.findViewById(R.id.iv_movie)
